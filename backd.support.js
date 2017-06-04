@@ -32,6 +32,9 @@
                                                                                                                                                                                                                                                                                                                 			"file": "backd.js",
                                                                                                                                                                                                                                                                                                                 			"module": "backd",
                                                                                                                                                                                                                                                                                                                 			"author": "Richeve S. Bebedor",
+                                                                                                                                                                                                                                                                                                                			"contributors": [
+                                                                                                                                                                                                                                                                                                                				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+                                                                                                                                                                                                                                                                                                                			],
                                                                                                                                                                                                                                                                                                                 			"eMail": "richeve.bebedor@gmail.com",
                                                                                                                                                                                                                                                                                                                 			"repository": "https://github.com/volkovasystems/backd.git",
                                                                                                                                                                                                                                                                                                                 			"test": "backd-test.js",
@@ -45,26 +48,26 @@
                                                                                                                                                                                                                                                                                                                 
                                                                                                                                                                                                                                                                                                                 	@include:
                                                                                                                                                                                                                                                                                                                 		{
-                                                                                                                                                                                                                                                                                                                			"budge": "budge",
                                                                                                                                                                                                                                                                                                                 			"burne": "burne",
                                                                                                                                                                                                                                                                                                                 			"falzy": "falzy",
                                                                                                                                                                                                                                                                                                                 			"harden": "harden",
                                                                                                                                                                                                                                                                                                                 			"kloak": "kloak",
                                                                                                                                                                                                                                                                                                                 			"mrkd": "mrkd",
                                                                                                                                                                                                                                                                                                                 			"protype": "protype",
+                                                                                                                                                                                                                                                                                                                			"shft": "shft",
                                                                                                                                                                                                                                                                                                                 			"truly": "truly",
                                                                                                                                                                                                                                                                                                                 			"zelf": "zelf"
                                                                                                                                                                                                                                                                                                                 		}
                                                                                                                                                                                                                                                                                                                 	@end-include
                                                                                                                                                                                                                                                                                                                 */
 
-var budge = require("budge");
 var burne = require("burne");
 var falzy = require("falzy");
 var harden = require("harden");
 var kloak = require("kloak");
 var mrkd = require("mrkd");
 var protype = require("protype");
+var shft = require("shft");
 var truly = require("truly");
 var zelf = require("zelf");
 
@@ -111,7 +114,7 @@ var backd = function backd(method) {
        			try to hard override the context.
        	@end-note
        */
-			data = method.apply(self, [error, result].concat(budge(arguments, 2)));
+			data = method.apply(self, [error, result].concat(shft(arguments, 2)));
 
 		} catch (error) {
 			data = error;

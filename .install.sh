@@ -1,12 +1,12 @@
 yarn add \
 babel-runtime \
-budge \
 burne \
 falzy \
 harden \
 kloak \
 mrkd \
 protype \
+shft \
 truly \
 zelf \
 --save && \
@@ -19,13 +19,13 @@ source-map-loader \
 webpack \
 --dev && \
 bower install \
-budge \
 burne \
 falzy \
 harden \
 kloak \
 mrkd \
 protype \
+shft \
 truly \
 zelf \
 --save \

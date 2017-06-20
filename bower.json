@@ -1,13 +1,13 @@
 {
   "name": "backd",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Call the callback once but better.",
   "main": "backd.deploy.js",
   "support": "backd.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
     "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon"
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -29,8 +29,8 @@
     "burne": "^0.3.0",
     "falzy": "^0.20.0",
     "harden": "^0.22.0",
-    "kloak": "^0.26.0",
-    "mrkd": "^0.7.0",
+    "kloak": "^0.27.0",
+    "mrkd": "^0.8.0",
     "protype": "^0.22.0",
     "shft": "^0.2.0",
     "truly": "^0.19.0",

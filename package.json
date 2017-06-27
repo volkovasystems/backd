@@ -1,6 +1,6 @@
 {
   "name": "backd",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Call the callback once but better.",
   "main": "backd.js",
   "support": "backd.support.js",
@@ -33,10 +33,10 @@
   "homepage": "https://github.com/volkovasystems/backd#readme",
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "burne": "^0.3.0",
+    "burne": "^0.4.0",
     "falzy": "^0.20.0",
     "harden": "^0.22.0",
-    "kloak": "^0.27.0",
+    "kloak": "^0.28.0",
     "mrkd": "^0.8.0",
     "protype": "^0.22.0",
     "shft": "^0.2.0",

@@ -54,7 +54,6 @@
 			"harden": "harden",
 			"kloak": "kloak",
 			"mrkd": "mrkd",
-			"protype": "protype",
 			"shft": "shft",
 			"truly": "truly",
 			"zelf": "zelf"
@@ -67,7 +66,6 @@ const falzy = require( "falzy" );
 const harden = require( "harden" );
 const kloak = require( "kloak" );
 const mrkd = require( "mrkd" );
-const protype = require( "protype" );
 const shft = require( "shft" );
 const truly = require( "truly" );
 const zelf = require( "zelf" );
@@ -88,7 +86,7 @@ const backd = function backd( method ){
 
 	let self = zelf( this );
 
-	if( falzy( method ) || !protype( method, FUNCTION ) ){
+	if( falzy( method ) || typeof method != "function" ){
 		method = function method( ){ return self; };
 	}
 

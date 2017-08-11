@@ -5,7 +5,6 @@ falzy \
 harden \
 kloak \
 mrkd \
-protype \
 shft \
 truly \
 zelf \
@@ -24,7 +23,6 @@ falzy \
 harden \
 kloak \
 mrkd \
-protype \
 shft \
 truly \
 zelf \

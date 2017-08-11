@@ -54,7 +54,6 @@
                                                                                                                                                                                                                                                                                                                 			"harden": "harden",
                                                                                                                                                                                                                                                                                                                 			"kloak": "kloak",
                                                                                                                                                                                                                                                                                                                 			"mrkd": "mrkd",
-                                                                                                                                                                                                                                                                                                                			"protype": "protype",
                                                                                                                                                                                                                                                                                                                 			"shft": "shft",
                                                                                                                                                                                                                                                                                                                 			"truly": "truly",
                                                                                                                                                                                                                                                                                                                 			"zelf": "zelf"
@@ -67,7 +66,6 @@ var falzy = require("falzy");
 var harden = require("harden");
 var kloak = require("kloak");
 var mrkd = require("mrkd");
-var protype = require("protype");
 var shft = require("shft");
 var truly = require("truly");
 var zelf = require("zelf");
@@ -88,7 +86,7 @@ var backd = function backd(method) {
 
 	var self = zelf(this);
 
-	if (falzy(method) || !protype(method, FUNCTION)) {
+	if (falzy(method) || typeof method != "function") {
 		method = function method() {return self;};
 	}
 

@@ -1,38 +1,28 @@
 {
-  "name": "backd",
-  "version": "0.5.0",
-  "description": "Call the callback once but better.",
-  "main": "backd.deploy.js",
-  "support": "backd.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "call",
-    "callback",
-    "once",
-    "better",
-    "backd"
-  ],
-  "homepage": "https://github.com/volkovasystems/backd",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "burne": "^0.6.0",
-    "falzy": "^0.23.0",
-    "harden": "^0.23.0",
-    "kloak": "^0.30.0",
-    "mrkd": "^0.11.0",
-    "shft": "^0.5.0",
-    "truly": "^0.20.0",
-    "zelf": "^0.14.0"
-  }
+	"name": "backd",
+	"version": "0.5.0",
+	"description": "Call the callback once but better.",
+	"main": "backd.deploy.js",
+	"support": "backd.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"call",
+		"callback",
+		"once",
+		"better",
+		"backd"
+	],
+	"homepage": "https://github.com/volkovasystems/backd",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
 }

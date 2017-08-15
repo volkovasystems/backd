@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>backd unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:backd</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./backd.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "backd unit test", function( assert ) {
+			mocha.setup( "bdd" );
+		</script>
 
-				let callback = backd( function callback( error, result, option ){
-					return [ error, result, option ];
-				} );
+		<script type="application/javascript" src="./test.deploy.js"></script>
 
-				let error = new Error( "test error" );
-				let result = "result";
-				let option = { "hello": "world" };
-
-				assert.deepEqual( callback( error, result, option ), [ error, result, option ], "should be equal to [ new Error( 'test error' ), 'result', { 'hello': 'world' } ]" );
-
-				assert.deepEqual( callback( "yeah", "sample" ), [ error, result, option ], "should be equal to [ new Error( 'test error' ), 'result', { 'hello': 'world' } ]" );
-
-			} );
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>

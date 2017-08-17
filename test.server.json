@@ -1,16 +1,46 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-15T14:35:03.909Z",
-    "end": "2017-08-15T14:35:03.909Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 2,
+		"tests": 2,
+		"passes": 2,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-17T06:00:58.372Z",
+		"end": "2017-08-17T06:00:58.389Z",
+		"duration": 17
+	},
+	"tests": [
+		{
+			"title": "should return array containing the given error, result, and option parameters values",
+			"fullTitle": "backd `backd( function callback( error, result, option ){ return [ error, result, option ] } )` should return array containing the given error, result, and option parameters values",
+			"duration": 11,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return array containing the given error and result parameters values",
+			"fullTitle": "backd `backd( function callback( error, result, option ){ return [ error, result, option ] } )` should return array containing the given error and result parameters values",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should return array containing the given error, result, and option parameters values",
+			"fullTitle": "backd `backd( function callback( error, result, option ){ return [ error, result, option ] } )` should return array containing the given error, result, and option parameters values",
+			"duration": 11,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return array containing the given error and result parameters values",
+			"fullTitle": "backd `backd( function callback( error, result, option ){ return [ error, result, option ] } )` should return array containing the given error and result parameters values",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

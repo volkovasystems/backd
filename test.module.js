@@ -70,6 +70,34 @@ const path = require( "path" );
 
 describe( "backd", ( ) => {
 
+	describe( "`backd( function callback( error, result, option ){ return [ error, result, option ] } )`", ( ) => {
+
+		it( "should return array containing the given error, result, and option parameters values", ( ) => {
+
+			let error = new Error( "test error" );
+			let result = "result";
+			let option = { "hello": "world" };
+
+			let callback = backd( function callback( error, result, option ){
+				return [ error, result, option ];
+			} );
+
+			assert.deepEqual( callback( error, result, option ), [ error, result, option ] );
+
+		} );
+
+		it( "should return array containing the given error and result parameters values", ( ) => {
+
+			let callback = backd( function callback( error, result, option ){
+				return [ error, result, option ];
+			} );
+
+			assert.deepEqual( callback( null, "sample" ), [ null, "sample", undefined ] );
+
+		} );
+
+	} );
+
 } );
 
 //: @end-server
@@ -78,6 +106,35 @@ describe( "backd", ( ) => {
 //: @client:
 
 describe( "backd", ( ) => {
+
+	describe( "`backd( function callback( error, result, option ){ return [ error, result, option ] } )`", ( ) => {
+
+		it( "should return array containing the given error, result, and option parameters values", ( ) => {
+
+			let error = new Error( "test error" );
+			let result = "result";
+			let option = { "hello": "world" };
+
+			let callback = backd( function callback( error, result, option ){
+				return [ error, result, option ];
+			} );
+
+			assert.deepEqual( callback( error, result, option ), [ error, result, option ] );
+
+		} );
+
+		it( "should return array containing the given error and result parameters values", ( ) => {
+
+			let callback = backd( function callback( error, result, option ){
+				return [ error, result, option ];
+			} );
+
+			assert.deepEqual( callback( null, "sample" ), [ null, "sample", undefined ] );
+
+		} );
+
+	} );
+
 } );
 
 //: @end-client

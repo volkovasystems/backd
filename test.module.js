@@ -143,6 +143,59 @@ describe( "backd", ( ) => {
 //: @bridge:
 
 describe( "backd", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`backd( function callback( error, result, option ){ return [ error, result, option ] } )`", ( ) => {
+
+		it( "should return array containing the given error, result, and option parameters values", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					let error = new Error( "test error" );
+					let result = "result";
+					let option = { "hello": "world" };
+
+					let callback = backd( function callback( error, result, option ){
+						return [ error, result, option ];
+					} );
+
+					return JSON.stringify( callback( error, result, option ) );
+
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, '[{},"result",{"hello":"world"}]' );
+
+		} );
+
+		it( "should return array containing the given error and result parameters values", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					let callback = backd( function callback( error, result, option ){
+						return [ error, result, option ];
+					} );
+
+					return JSON.stringify( callback( null, "sample" ) );
+
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.equal( result, '[null,"sample",null]' );
+
+		} );
+
+	} );
+
 } );
 
 //: @end-bridge

@@ -5,9 +5,9 @@
 		"passes": 2,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-17T06:00:58.372Z",
-		"end": "2017-08-17T06:00:58.389Z",
-		"duration": 17
+		"start": "2017-08-29T04:03:45.961Z",
+		"end": "2017-08-29T04:03:45.977Z",
+		"duration": 16
 	},
 	"tests": [
 		{
@@ -20,7 +20,7 @@
 		{
 			"title": "should return array containing the given error and result parameters values",
 			"fullTitle": "backd `backd( function callback( error, result, option ){ return [ error, result, option ] } )` should return array containing the given error and result parameters values",
-			"duration": 1,
+			"duration": 2,
 			"currentRetry": 0,
 			"err": {}
 		}
@@ -38,7 +38,7 @@
 		{
 			"title": "should return array containing the given error and result parameters values",
 			"fullTitle": "backd `backd( function callback( error, result, option ){ return [ error, result, option ] } )` should return array containing the given error and result parameters values",
-			"duration": 1,
+			"duration": 2,
 			"currentRetry": 0,
 			"err": {}
 		}

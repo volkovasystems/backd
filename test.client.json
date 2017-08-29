@@ -4,8 +4,8 @@
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-17T06:00:59.678Z",
-	"end": "2017-08-17T06:01:33.505Z",
+	"start": "2017-08-29T04:03:47.148Z",
+	"end": "2017-08-29T04:04:21.125Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,53 +28,53 @@
 		{
 			"name": "backd",
 			"duration": 0,
-			"start": "2017-08-17T06:01:33.132Z",
+			"start": "2017-08-29T04:04:20.746Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "backd",
 			"duration": 196,
-			"start": "2017-08-17T06:01:33.133Z",
-			"end": "2017-08-17T06:01:33.329Z",
+			"start": "2017-08-29T04:04:20.746Z",
+			"end": "2017-08-29T04:04:20.942Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-17T06:01:33.134Z",
-					"end": "2017-08-17T06:01:33.134Z",
+					"start": "2017-08-29T04:04:20.748Z",
+					"end": "2017-08-29T04:04:20.748Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "backd",
 					"associatedTest": "should return array containing the given error, result, and option parameters values"
 				},
 				{
-					"start": "2017-08-17T06:01:33.270Z",
-					"end": "2017-08-17T06:01:33.270Z",
-					"duration": 0,
+					"start": "2017-08-29T04:04:20.880Z",
+					"end": "2017-08-29T04:04:20.881Z",
+					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "backd",
 					"associatedTest": "should return array containing the given error, result, and option parameters values"
 				},
 				{
-					"start": "2017-08-17T06:01:33.270Z",
-					"end": "2017-08-17T06:01:33.271Z",
-					"duration": 1,
+					"start": "2017-08-29T04:04:20.881Z",
+					"end": "2017-08-29T04:04:20.881Z",
+					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "backd",
 					"associatedTest": "should return array containing the given error and result parameters values"
 				},
 				{
-					"start": "2017-08-17T06:01:33.328Z",
-					"end": "2017-08-17T06:01:33.328Z",
+					"start": "2017-08-29T04:04:20.941Z",
+					"end": "2017-08-29T04:04:20.941Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "backd",
 					"associatedTest": "should return array containing the given error and result parameters values"
 				},
 				{
-					"start": "2017-08-17T06:01:33.329Z",
-					"end": "2017-08-17T06:01:33.330Z",
-					"duration": 1,
+					"start": "2017-08-29T04:04:20.942Z",
+					"end": "2017-08-29T04:04:20.942Z",
+					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "backd"
 				}
@@ -82,22 +82,22 @@
 		},
 		{
 			"name": "`backd( function callback( error, result, option ){ return [ error, result, option ] } )`",
-			"duration": 196,
-			"start": "2017-08-17T06:01:33.133Z",
-			"end": "2017-08-17T06:01:33.329Z",
+			"duration": 195,
+			"start": "2017-08-29T04:04:20.747Z",
+			"end": "2017-08-29T04:04:20.942Z",
 			"tests": [
 				{
 					"name": "should return array containing the given error, result, and option parameters values",
-					"start": "2017-08-17T06:01:33.133Z",
-					"end": "2017-08-17T06:01:33.270Z",
-					"duration": 137,
+					"start": "2017-08-29T04:04:20.747Z",
+					"end": "2017-08-29T04:04:20.880Z",
+					"duration": 133,
 					"state": "pass"
 				},
 				{
 					"name": "should return array containing the given error and result parameters values",
-					"start": "2017-08-17T06:01:33.270Z",
-					"end": "2017-08-17T06:01:33.328Z",
-					"duration": 58,
+					"start": "2017-08-29T04:04:20.881Z",
+					"end": "2017-08-29T04:04:20.941Z",
+					"duration": 60,
 					"state": "pass"
 				}
 			],
